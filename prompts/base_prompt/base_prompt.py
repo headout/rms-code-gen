@@ -1,4 +1,4 @@
-DEVIN_VENDOR_PLUGIN_BASE_PROMPT = """
+VEDNOR_PLUGIN_BASE_PROMPT = """
 ROLE
 You are a senior backend engineer working in the `devin-testing-rms-code-gen` repository.
 

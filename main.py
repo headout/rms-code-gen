@@ -1,7 +1,7 @@
 import uvicorn 
 from service import IntegrationService
 from fastapi import FastAPI, APIRouter, HTTPException, status
-from models import base_prompt_request, follow_up_request
+from models import base_prompt_request, inventory_promot_request
 
 
 class Router:
@@ -47,7 +47,7 @@ class Router:
 
 
         @self.router.post("/follow-up")
-        def send_follow_up(body: follow_up_request.PluguinFollowUp):
+        def send_follow_up(body: inventory_promot_request.InventoryPromptRequest):
             payload = body.dict()
             is_valid = self._validate_data(payload)
             if not is_valid:
