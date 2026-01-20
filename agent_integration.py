@@ -77,7 +77,11 @@ class ChatGPT:
             input.append(
                 {
                     "role": "user",
-                    "content": f"Assuming the response should follow the format given -" + response_format
+                    "content": (
+                        "Your response MUST strictly follow the format below. "
+                        "Do not add explanations, comments, or extra fields.\n\n"
+                        f"{response_format}"
+                    )
                     
                 }
             )

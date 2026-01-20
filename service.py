@@ -28,7 +28,7 @@ class IntegrationService:
             currency_handling_strategy = payload["currency_handling_strategy"]
         )
 
-        response_format = VENDOR_PLUGIN_INVENTORY_PROMPT
+        response_format = VENDOR_PLUGIN_INVENTORY_PROMPT_RESPONSE_FORMAT
         final_prompt = self.chat_gpt.get_devin_prompt(inventory_prompt, response_format)
         result = self.devin_instance.send_followp_message_on_session(
             session_id=payload["session_id"], prompt=final_prompt
