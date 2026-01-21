@@ -1,6 +1,4 @@
 VENDOR_PLUGIN_INVENTORY_PROMPT_RESPONSE_FORMAT = """
-<META_DEVIN_PROMPT_SKELETON>
-
 ROLE
 You are a senior backend engineer working in the target repository that contains
 existing plugin scaffolding for supplier integrations.
@@ -202,6 +200,4 @@ When generating a Devin prompt using this skeleton:
 - Do NOT assume defaults
 - If supplier behavior is unknown, force a HARD FAILURE rule
 - Prefer over-specification to under-specification
-
-</META_DEVIN_PROMPT_SKELETON>
 """
